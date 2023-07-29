@@ -23,9 +23,9 @@ used.)
 
 ![2 1](https://github.com/the-d-code/NODEJS_ASSIGNMENT_1/assets/99545013/422945dc-f31f-46d9-9a05-dbde63026fc6)
 
-![2 2](https://github.com/the-d-code/NODEJS_ASSIGNMENT_1/assets/99545013/8dc2f471-173e-4d4b-960b-0a3a1361e5bc)
-
 ![2 3](https://github.com/the-d-code/NODEJS_ASSIGNMENT_1/assets/99545013/5e6e6c6b-c30c-4a46-8f8b-50f1244f5644)
+
+![2 2](https://github.com/the-d-code/NODEJS_ASSIGNMENT_1/assets/99545013/8dc2f471-173e-4d4b-960b-0a3a1361e5bc)
 
 --------------------------------------------------------------------------------
 # 3. Develop a module for domain specific chatbot and use it in a command line application.
