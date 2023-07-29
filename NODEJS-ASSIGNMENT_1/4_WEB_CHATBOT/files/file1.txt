@@ -1,0 +1,30 @@
+1. Develop a web server with following functionalities:
+- Serve static resources.
+- Handle GET request.
+- Handle POST request.
+
+2. Develop nodejs application with following requirements:
+- Develop a route "/gethello" with GET method. It displays "Hello NodeJS!!" as response.
+- Make an HTML page and display.
+- Call "/gethello" route from HTML page using AJAX call. (Any frontend AJAX call API can be
+used.)
+
+3. Develop a module for domain specific chatbot and use it in a command line application.
+
+4. Use above chatbot module in web based chatting of websocket.
+
+5. Write a program to create a compressed zip file for a folder.
+
+6. Write a program to extract a zip file.
+
+7. Write a program to promisify fs.unlink function and call it.
+
+8. Fetch data of google page using note-fetch using async-await model.
+
+9. Write a program that connect Mysql database, Insert a record in employee table and
+display all records in employee table using promise based approach.
+
+10. Set a server script, a test script and 3 user defined scripts in package.json file in your nodejs
+application.
+
+11. Develop an application to show live cricket score.

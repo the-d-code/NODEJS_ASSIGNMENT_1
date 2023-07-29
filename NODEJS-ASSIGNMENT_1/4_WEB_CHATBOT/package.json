@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bank-chatbot": "^1.1.0",
+    "node-static": "^0.7.11",
+    "ws": "^8.8.1"
+  }
+}

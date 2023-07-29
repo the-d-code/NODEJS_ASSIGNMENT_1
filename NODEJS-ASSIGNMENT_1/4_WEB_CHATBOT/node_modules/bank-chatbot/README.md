@@ -1,0 +1,1 @@
+this is simple chat-bot using readline module. it responds on user input from CLI.

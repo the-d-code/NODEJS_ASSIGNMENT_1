@@ -1,0 +1,15 @@
+{
+  "name": "10_server_script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "script1": "node script1.js",
+    "script2": "node script2.js",
+    "script3": "node script3.js",
+    "test": "node test"
+  },
+  "author": "Devanshi Akbari",
+  "license": "ISC"
+}

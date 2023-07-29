@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Cricket Score</title>
+    <style>
+        .content {
+            background-color: #faf8f7;
+            padding: 1.2rem;
+            border-radius: 1.4rem;
+            border: 1px solid black;
+            width: 33%;
+        }
+
+        .container {
+            padding: 0.4rem;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.4rem;
+        }
+
+        .ml2Rem {
+            margin-left: 2rem;
+        }
+
+        .fw-bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <!-- <h2 style="color:#2d89fa">Scoreboard</h2> -->
+        <div class="container">
+            <div class="scoreContainer">
+                <p><span class="fw-bold">Score</span> <span class="ml2Rem" id="score"></span></p>
+            </div>
+            <div id="overContainer">
+                <p><span class="fw-bold">Over</span> <span class="ml2Rem" id="over"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const ele_score = document.getElementById("score")
+    const ele_over = document.getElementById("over")
+    const fetchScore = async () => {
+        try {
+            const data = await fetch("http://localhost:8000/getscore");
+            const pdata = await data.json()
+            const display_score = pdata.score;
+            const display_over = pdata.overs;
+            ele_score.innerHTML = (display_score)
+            ele_over.innerHTML = (display_over)
+            console.log("data", pdata)
+            console.log("pdata", pdata)
+        } catch (err) {
+            console.log("Error Occured");
+            ele.innerHTML = "Error While Fetching Score"
+        }
+    }
+    fetchScore();
+    setInterval(fetchScore, 5000)
+</script>
+
+</html>

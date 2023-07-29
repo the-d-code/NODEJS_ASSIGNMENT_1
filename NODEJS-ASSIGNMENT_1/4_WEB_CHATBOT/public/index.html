@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script language="javascript">
+        var ws = new WebSocket('ws://localhost:8000');
+
+        ws.addEventListener("message", function (msg1) {
+            var msg = msg1.data;
+            document.getElementById('chatlog').innerHTML += '<br>Bank Bot: ' + msg;
+        });
+
+        function sendMessage() {
+            var message = document.getElementById('message').value;
+            document.getElementById('chatlog').innerHTML += '<br> Me: ' + message;
+            ws.send(message);
+        }
+
+    </script>
+    <h2>Response From Bot</h2>
+    <div id="chatlog"></div>
+    <hr />
+    <h2>Write Your Queries</h2>
+    <input type="text" id="message" placeholder="ask here" />
+    <input type="button" id="b1" onclick="sendMessage()" value="send" />
+
+</body>
+
+</html>
